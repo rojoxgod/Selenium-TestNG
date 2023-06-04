@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--for running tests parallel we need to use attribute "parallel='tests'" in suite tag, and the max number on running at the same time tests is indicated using "thread-count='5'"-->
+
+<suite name="Loan Department">
+	
+	<!--Indicate where the listener is located in the project-->
+	<!--Execute the code when the test is fails or pass-->
+	<listeners>
+		<listener class-name="Tests.day5"/>
+	</listeners>
+	
+	
+	
+	<!--Declaring global variables for using in entire project, need to write a @Parameters in your method/test-->
+	<!--Is possible to declare the variable in the test scope-->
+	<parameter name="URL" value="www.google.com"/>
+	<parameter name="USERNAME" value="QA Engineer"/>
+	
+	<test name="Personal Loan">
+		<classes>
+			
+			<!--Execution entire class/all tests-->
+			<class name="Tests.day1" />
+			<class name="Tests.day2" />
+			
+		</classes>
+	</test>
+
+
+	<test name="Car Loan">
+		<classes>
+			
+			<!--Exclude only the execution of one method/test in entire class-->
+			<class name="Tests.day3">
+				<methods>
+					<exclude name="MobileLoginCARLOAN"/>
+				</methods>
+			</class>
+			
+		</classes>
+	</test>
+
+
+	<test name="Home Loan">
+		<classes>
+			
+			<!--Include only the execution of one method/test in entire class-->
+			<class name="Tests.day4">
+				<methods>
+					<include name="APILoginHOMELOAN"/>
+					<include name="WebLoginHOMELOAN"/>
+				</methods>
+			</class>
+			
+			<!--Exclude only the execution of 2 methods/tests with the starting name Mobile.* in entire class-->
+			<class name="Tests.day4">
+				<methods>
+					<exclude name="Mobile.*"/>
+				</methods>
+			</class>
+			
+		</classes>
+	</test>
+	
+	
+</suite>
+

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="13" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-27T23:09:38 EEST" name="Loan Department" finished-at="2023-04-27T23:09:39 EEST" duration-ms="127">
+    <groups>
+      <group name="API">
+        <method signature="day4.WebLoginHOMELOAN()[pri:0, instance:Tests.day4@614ca7df]" name="WebLoginHOMELOAN" class="Tests.day4"/>
+        <method signature="day4.APILoginHOMELOAN()[pri:0, instance:Tests.day4@614ca7df]" name="APILoginHOMELOAN" class="Tests.day4"/>
+      </group> <!-- API -->
+      <group name="Smoke">
+        <method signature="day1.personalLoan1()[pri:0, instance:Tests.day1@73ee04c8]" name="personalLoan1" class="Tests.day1"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2023-04-27T23:09:38 EEST" name="Personal Loan" finished-at="2023-04-27T23:09:39 EEST" duration-ms="47">
+      <class name="Tests.day2">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Tests.day2@793be5ca]" started-at="2023-04-27T23:09:38 EEST" name="beforeTest" finished-at="2023-04-27T23:09:38 EEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="personalLoan3()[pri:0, instance:Tests.day2@793be5ca]" started-at="2023-04-27T23:09:39 EEST" name="personalLoan3" finished-at="2023-04-27T23:09:39 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalLoan3 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Tests.day2@793be5ca]" started-at="2023-04-27T23:09:39 EEST" name="afterTest" finished-at="2023-04-27T23:09:39 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Tests.day2 -->
+      <class name="Tests.day1">
+        <test-method signature="dataProv(java.lang.String,java.lang.String)[pri:0, instance:Tests.day1@73ee04c8]" started-at="2023-04-27T23:09:38 EEST" name="dataProv" data-provider="getData" finished-at="2023-04-27T23:09:38 EEST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstUSERNAME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstPASS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProv -->
+        <test-method signature="dataProv(java.lang.String,java.lang.String)[pri:0, instance:Tests.day1@73ee04c8]" started-at="2023-04-27T23:09:38 EEST" name="dataProv" data-provider="getData" finished-at="2023-04-27T23:09:38 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secondUSERNAME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secondPASS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProv -->
+        <test-method signature="dataProv(java.lang.String,java.lang.String)[pri:0, instance:Tests.day1@73ee04c8]" started-at="2023-04-27T23:09:38 EEST" name="dataProv" data-provider="getData" finished-at="2023-04-27T23:09:39 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thirdUSERNAME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[thirdPASS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProv -->
+        <test-method signature="personalLoan1()[pri:0, instance:Tests.day1@73ee04c8]" started-at="2023-04-27T23:09:39 EEST" name="personalLoan1" finished-at="2023-04-27T23:09:39 EEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalLoan1 -->
+        <test-method signature="showURL(java.lang.String,java.lang.String)[pri:0, instance:Tests.day1@73ee04c8]" started-at="2023-04-27T23:09:39 EEST" name="showURL" finished-at="2023-04-27T23:09:39 EEST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QA Engineer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showURL -->
+      </class> <!-- Tests.day1 -->
+    </test> <!-- Personal Loan -->
+    <test started-at="2023-04-27T23:09:39 EEST" name="Car Loan" finished-at="2023-04-27T23:09:39 EEST" duration-ms="3">
+      <class name="Tests.day3">
+        <test-method signature="WebLoginCARLOAN()[pri:0, instance:Tests.day3@f736069]" started-at="2023-04-27T23:09:39 EEST" name="WebLoginCARLOAN" finished-at="2023-04-27T23:09:39 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginCARLOAN -->
+      </class> <!-- Tests.day3 -->
+    </test> <!-- Car Loan -->
+    <test started-at="2023-04-27T23:09:39 EEST" name="Home Loan" finished-at="2023-04-27T23:09:39 EEST" duration-ms="10">
+      <class name="Tests.day4">
+        <test-method signature="WebLoginHOMELOAN()[pri:0, instance:Tests.day4@614ca7df]" started-at="2023-04-27T23:09:39 EEST" name="WebLoginHOMELOAN" finished-at="2023-04-27T23:09:39 EEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginHOMELOAN -->
+        <test-method signature="APILoginHOMELOAN()[pri:0, instance:Tests.day4@614ca7df]" started-at="2023-04-27T23:09:39 EEST" name="APILoginHOMELOAN" finished-at="2023-04-27T23:09:39 EEST" depends-on-methods="Tests.day4.WebLoginHOMELOAN" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APILoginHOMELOAN -->
+      </class> <!-- Tests.day4 -->
+      <class name="Tests.day2">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Tests.day2@793be5ca]" started-at="2023-04-27T23:09:39 EEST" name="afterSuite" finished-at="2023-04-27T23:09:39 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- Tests.day2 -->
+    </test> <!-- Home Loan -->
+  </suite> <!-- Loan Department -->
+</testng-results>
